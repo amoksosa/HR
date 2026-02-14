@@ -1,0 +1,233 @@
+/* HRMate-like light employee theme */
+
+.emp-page {
+  background: #f2f4f7;
+}
+
+.emp-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(56, 189, 248, 0.18), transparent 45%),
+    radial-gradient(circle at 85% 15%, rgba(251, 146, 60, 0.18), transparent 42%),
+    radial-gradient(circle at 55% 95%, rgba(99, 102, 241, 0.10), transparent 55%),
+    linear-gradient(#f2f4f7, #f2f4f7);
+}
+
+/* topbar */
+.emp-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+.emp-logo {
+  height: 42px;
+  width: 42px;
+  border-radius: 14px;
+  background: rgba(56, 189, 248, 0.10);
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emp-logo-dot {
+  height: 14px;
+  width: 14px;
+  border-radius: 999px;
+  background: #38bdf8;
+}
+
+.emp-avatar {
+  height: 38px;
+  width: 38px;
+  border-radius: 999px;
+  background: rgba(251, 146, 60, 0.12);
+  border: 1px solid rgba(251, 146, 60, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: rgba(234, 88, 12, 0.90);
+}
+
+/* buttons */
+.emp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-weight: 800;
+  font-size: 13px;
+  transition: 150ms ease;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.emp-btn--primary {
+  background: #fb923c;
+  color: #0b1220;
+  border-color: rgba(251, 146, 60, 0.40);
+}
+
+.emp-btn--primary:hover {
+  filter: brightness(0.98);
+  transform: translateY(-1px);
+}
+
+.emp-btn--soft {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(15, 23, 42, 0.10);
+  color: rgba(15, 23, 42, 0.85);
+}
+
+.emp-btn--soft:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-1px);
+}
+
+/* hero + cards */
+.emp-hero,
+.emp-card,
+.emp-kpi,
+.emp-mini {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(10px);
+}
+
+.emp-hero {
+  padding: 18px;
+  background:
+    linear-gradient(135deg, rgba(99, 102, 241, 0.16), rgba(255, 255, 255, 0.82));
+}
+
+.emp-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.emp-card-body {
+  padding: 16px 18px;
+}
+
+.emp-kpi {
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.emp-mini {
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.emp-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.03);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.emp-label {
+  font-size: 12px;
+  color: rgba(15, 23, 42, 0.55);
+  font-weight: 800;
+}
+
+.emp-value {
+  font-size: 13px;
+  color: rgba(15, 23, 42, 0.85);
+  font-weight: 700;
+  text-align: right;
+}
+
+/* alerts */
+.emp-alert {
+  border-radius: 16px;
+  padding: 12px 14px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: rgba(255, 255, 255, 0.90);
+}
+
+.emp-alert--warn {
+  background: rgba(255, 237, 213, 0.85);
+  border-color: rgba(251, 146, 60, 0.28);
+}
+
+.emp-note {
+  border-radius: 16px;
+  padding: 12px 14px;
+  border: 1px solid rgba(56, 189, 248, 0.20);
+  background: rgba(224, 242, 254, 0.75);
+  color: rgba(15, 23, 42, 0.70);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* table */
+.emp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.emp-table thead th {
+  text-align: left;
+  padding: 12px 12px;
+  font-size: 12px;
+  color: rgba(15, 23, 42, 0.55);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+.emp-table tbody td {
+  padding: 14px 12px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+  color: rgba(15, 23, 42, 0.82);
+}
+.emp-table tbody tr:hover {
+  background: rgba(99, 102, 241, 0.04);
+}
+
+/* pills */
+.emp-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 900;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+.emp-pill--ok {
+  background: rgba(16, 185, 129, 0.14);
+  border-color: rgba(16, 185, 129, 0.22);
+  color: rgba(5, 150, 105, 0.95);
+}
+.emp-pill--late {
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.22);
+  color: rgba(220, 38, 38, 0.95);
+}
+.emp-pill--muted {
+  background: rgba(148, 163, 184, 0.20);
+  border-color: rgba(148, 163, 184, 0.22);
+  color: rgba(51, 65, 85, 0.90);
+}
